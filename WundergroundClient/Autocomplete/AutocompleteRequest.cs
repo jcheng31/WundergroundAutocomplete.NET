@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace WundergroundClient
+namespace WundergroundClient.Autocomplete
 {
     enum ResultFilter
     {
@@ -36,5 +32,10 @@ namespace WundergroundClient
             _filter = filter;
             _countryCode = countryCode;
         }
+
+        //public async Task<String> ExecuteAsync()
+        //{
+            
+        //}
     }
 }
