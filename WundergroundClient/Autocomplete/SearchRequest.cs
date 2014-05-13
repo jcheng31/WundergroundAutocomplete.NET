@@ -140,9 +140,7 @@ namespace WundergroundClient.Autocomplete
 
         private static Result ConvertRawResultToHurricane(RawResult r)
         {
-            var basin = GetBasinFromRawResult(r);
-
-
+            // Handle the start_epoch and end_epoch.
             DateTime start = DateTime.MinValue;
             DateTime end = DateTime.MinValue;
 
@@ -152,12 +150,12 @@ namespace WundergroundClient.Autocomplete
 
             if (!isStartAndEndEqual && isStartValid && isEndValid)
             {
-                var startSeconds = Int32.Parse(r.start_epoch, CultureInfo.InvariantCulture);
-                start = Utilities.GetDateTimeFromUnixEpochTime(startSeconds);
-
-                var endSeconds = Int32.Parse(r.end_epoch, CultureInfo.InvariantCulture);
-                end = Utilities.GetDateTimeFromUnixEpochTime(endSeconds);
+                start = Utilities.GetDateTimeFromUnixEpochTime(r.start_epoch);
+                end = Utilities.GetDateTimeFromUnixEpochTime(r.end_epoch);
             }
+
+            // Figure out which basin we're in.
+            var basin = GetBasinFromRawResult(r);
 
             Result result = new Hurricane
             {

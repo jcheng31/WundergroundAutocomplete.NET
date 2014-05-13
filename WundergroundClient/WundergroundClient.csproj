@@ -74,6 +74,7 @@
     <Compile Include="Autocomplete\Result.cs" />
     <Compile Include="Autocomplete\City.cs" />
     <Compile Include="Autocomplete\Hurricane.cs" />
+    <Compile Include="Utilities.cs" />
     <Compile Include="WundergroundClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
