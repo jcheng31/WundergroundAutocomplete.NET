@@ -9,3 +9,4 @@ _Resharper*
 *.DotSettings.user
 */PerfLogs/*
 *.user
+packages/*
