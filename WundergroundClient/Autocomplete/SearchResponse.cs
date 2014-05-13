@@ -5,12 +5,12 @@ using System.Text;
 
 namespace WundergroundClient.Autocomplete
 {
-    class AutocompleteResponse
+    class SearchResponse
     {
         public Boolean IsSuccessful { get; private set; }
-        public IList<AutocompleteResponseObject> Results;
+        public IList<Result> Results;
 
-        public AutocompleteResponse(bool isSuccessful)
+        public SearchResponse(bool isSuccessful)
         {
             IsSuccessful = isSuccessful;
         }

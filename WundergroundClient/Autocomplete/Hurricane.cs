@@ -18,7 +18,7 @@ namespace WundergroundClient.Autocomplete
         NorthIndian, // "ni"
         SouthIndian // "si"
     }
-    class Hurricane : AutocompleteResponseObject
+    class Hurricane : Result
     {
         /// <summary>
         /// The date on which this hurricane occurred. The time properties of this 

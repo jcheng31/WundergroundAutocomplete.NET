@@ -2,7 +2,7 @@
 
 namespace WundergroundClient.Autocomplete
 {
-    class City : AutocompleteResponseObject
+    class City : Result
     {
         public String Country;
 

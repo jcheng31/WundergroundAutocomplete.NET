@@ -68,8 +68,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Autocomplete\AutocompleteRequest.cs" />
-    <Compile Include="Autocomplete\AutocompleteResponseObject.cs" />
+    <Compile Include="Autocomplete\SearchRequest.cs" />
+    <Compile Include="Autocomplete\SearchResponse.cs" />
+    <Compile Include="Autocomplete\Result.cs" />
     <Compile Include="Autocomplete\City.cs" />
     <Compile Include="Autocomplete\Hurricane.cs" />
     <Compile Include="WundergroundClient.cs" />
@@ -79,6 +80,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net40+sl4+win8+wp71+wpa81\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\portable-net40+sl4+win8+wp71+wpa81\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.IO">
       <HintPath>..\packages\Microsoft.Bcl.1.1.9\lib\portable-net40+sl4+win8+wp71+wpa81\System.IO.dll</HintPath>
     </Reference>
