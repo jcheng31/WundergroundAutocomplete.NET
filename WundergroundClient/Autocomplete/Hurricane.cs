@@ -24,9 +24,8 @@ namespace WundergroundClient.Autocomplete
     class Hurricane : AutocompleteResponseObject
     {
         /// <summary>
-        /// The date on which this hurricane occurred.
-        /// The time properties of this field should be ignored;
-        /// Wunderground does not provide timing information.
+        /// The date on which this hurricane occurred. The time properties of this 
+        /// field should be ignored.
         /// </summary>
         public DateTime Date;
 
@@ -46,5 +45,33 @@ namespace WundergroundClient.Autocomplete
         /// if the amount was not recorded.
         /// </summary>
         public int Damage;
+
+        /// <summary>
+        /// The highest category this hurricane reached on the Saffir-Simpson scale.
+        /// </summary>
+        public int PeakCategory;
+
+        public double SouthWestLatitude;
+        public double SouthWestLongitude;
+        public double NorthEastLatitude;
+        public double NorthEastLongitude;
+
+        /// <summary>
+        /// The date this hurricane formed. The time properties of this field
+        /// should be ignored.
+        /// 
+        /// Note: this date is sometimes unknown. In this case, FormationDate
+        /// and DissipationDate will be equal to DateTime.MinValue.
+        /// </summary>
+        public DateTime FormationDate;
+
+        /// <summary>
+        /// The date this hurricane dissipated. The time properties of this field
+        /// should be ignored.
+        ///
+        /// Note: this date is sometimes unknown. In this case, FormationDate
+        /// and DissipationDate will be equal to DateTime.MinValue.
+        /// </summary>
+        public DateTime DissipationDate;
     }
 }

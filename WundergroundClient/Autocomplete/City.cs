@@ -26,8 +26,13 @@ namespace WundergroundClient.Autocomplete
         /// </summary>
         public String ShortTimeZone;
 
-        // Though the API documentation includes latitude and longitude
-        // coordinates, they do not appear to actually be returned in
-        // the response.
+        public double Latitude;
+        public double Longitude;
+
+        /// <summary>
+        /// The latitude and longitude of this city, separated
+        /// by a space.
+        /// </summary>
+        public String LatitudeLongitude;
     }
 }
