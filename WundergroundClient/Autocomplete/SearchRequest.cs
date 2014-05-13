@@ -142,18 +142,21 @@ namespace WundergroundClient.Autocomplete
         {
             var basin = GetBasinFromRawResult(r);
 
-            var unixEpochBase = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 
             DateTime start = DateTime.MinValue;
             DateTime end = DateTime.MinValue;
 
-            if (!r.start_epoch.Equals(r.end_epoch) && r.start_epoch != "-1" && r.end_epoch != "-1")
+            bool isStartAndEndEqual = r.start_epoch.Equals(r.end_epoch);
+            bool isStartValid = r.start_epoch != "-1";
+            bool isEndValid = r.end_epoch != "-1";
+
+            if (!isStartAndEndEqual && isStartValid && isEndValid)
             {
                 var startSeconds = Int32.Parse(r.start_epoch, CultureInfo.InvariantCulture);
-                var endSeconds = Int32.Parse(r.end_epoch, CultureInfo.InvariantCulture);
+                start = Utilities.GetDateTimeFromUnixEpochTime(startSeconds);
 
-                start = unixEpochBase.AddSeconds(startSeconds);
-                end = unixEpochBase.AddSeconds(endSeconds);
+                var endSeconds = Int32.Parse(r.end_epoch, CultureInfo.InvariantCulture);
+                end = Utilities.GetDateTimeFromUnixEpochTime(endSeconds);
             }
 
             Result result = new Hurricane
