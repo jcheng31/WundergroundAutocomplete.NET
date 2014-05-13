@@ -34,5 +34,17 @@ namespace WundergroundClient.Autocomplete
         /// The Tropical Cyclone Basin that this hurricane occurred in.
         /// </summary>
         public TropicalCycloneBasin Basin;
+
+        /// <summary>
+        /// The Tropical Depression number of this hurricane.
+        /// </summary>
+        public int StormNumber;
+
+        /// <summary>
+        /// Damages caused by this hurricane, in millions of USD.
+        /// Note: Wunderground sometimes returns a negative number here - possibly
+        /// if the amount was not recorded.
+        /// </summary>
+        public int Damage;
     }
 }
