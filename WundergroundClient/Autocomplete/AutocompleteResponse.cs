@@ -9,5 +9,10 @@ namespace WundergroundClient.Autocomplete
     {
         public Boolean IsSuccessful { get; private set; }
         public IList<AutocompleteResponseObject> Results;
+
+        public AutocompleteResponse(bool isSuccessful)
+        {
+            IsSuccessful = isSuccessful;
+        }
     }
 }
