@@ -147,7 +147,7 @@ namespace WundergroundClient.Autocomplete
             DateTime start = DateTime.MinValue;
             DateTime end = DateTime.MinValue;
 
-            if (!r.start_epoch.Equals(r.end_epoch))
+            if (!r.start_epoch.Equals(r.end_epoch) && r.start_epoch != "-1" && r.end_epoch != "-1")
             {
                 var startSeconds = Int32.Parse(r.start_epoch, CultureInfo.InvariantCulture);
                 var endSeconds = Int32.Parse(r.end_epoch, CultureInfo.InvariantCulture);
