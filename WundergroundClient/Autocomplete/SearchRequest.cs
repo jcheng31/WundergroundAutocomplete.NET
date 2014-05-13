@@ -59,6 +59,10 @@ namespace WundergroundClient.Autocomplete
             _countryCode = countryCode;
         }
 
+        /// <summary>
+        /// Asynchronously executes this query.
+        /// </summary>
+        /// <returns>A SearchResponse object containing the results of the query.</returns>
         public async Task<SearchResponse> ExecuteAsync()
         {
             using (var client = new HttpClient())
