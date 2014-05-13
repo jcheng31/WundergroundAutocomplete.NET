@@ -5,6 +5,11 @@ namespace WundergroundClient
 {
     class Utilities
     {
+        /// <summary>
+        /// Converts a Unix epoch time string into a DateTime representation.
+        /// </summary>
+        /// <param name="epochTime">String containing the number of seconds since January 1, 1970.</param>
+        /// <returns></returns>
         public static DateTime GetDateTimeFromUnixEpochTime(string epochTime)
         {
             int secondsSince;
@@ -16,6 +21,11 @@ namespace WundergroundClient
             return GetDateTimeFromUnixEpochTime(secondsSince);
         }
 
+        /// <summary>
+        /// Converts Unix epoch time into a DateTime representation.
+        /// </summary>
+        /// <param name="epochTime">The number of seconds since January 1, 1970.</param>
+        /// <returns></returns>
         public static DateTime GetDateTimeFromUnixEpochTime(int epochTime)
         {
             if (epochTime < 0)
