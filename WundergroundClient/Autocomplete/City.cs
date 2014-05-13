@@ -31,5 +31,14 @@ namespace WundergroundClient.Autocomplete
         /// by a space.
         /// </summary>
         public String LatitudeLongitude;
+
+        /// <summary>
+        /// The country code this city is in.
+        /// 
+        /// Note: Wunderground uses different country codes than
+        /// the standard ISO. Check http://www.wunderground.com/weather/api/d/docs?d=resources/country-to-iso-matching
+        /// for mapping between this field and the ISO specification.
+        /// </summary>
+        public String CountryCode;
     }
 }
