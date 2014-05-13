@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace WundergroundClient.Autocomplete
 {
@@ -41,8 +38,9 @@ namespace WundergroundClient.Autocomplete
 
         /// <summary>
         /// Damages caused by this hurricane, in millions of USD.
-        /// Note: Wunderground sometimes returns a negative number here - possibly
-        /// if the amount was not recorded.
+        ///
+        /// Note: this value is sometimes unknown. In that case, this field
+        /// will be -1.
         /// </summary>
         public int Damage;
 

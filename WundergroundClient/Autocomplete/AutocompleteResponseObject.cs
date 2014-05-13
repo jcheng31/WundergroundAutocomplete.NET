@@ -1,13 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace WundergroundClient.Autocomplete
 {
     abstract class AutocompleteResponseObject
     {
         public String Name;
+
+        /// <summary>
+        /// A link that can be used with other APIs to obtain
+        /// further information about this object.
+        /// 
+        /// This corresponds to the "l" field returned by the
+        /// API.
+        /// </summary>
         public String Link;
     }
 }
