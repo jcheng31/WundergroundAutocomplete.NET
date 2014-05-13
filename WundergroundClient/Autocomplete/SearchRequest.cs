@@ -163,7 +163,7 @@ namespace WundergroundClient.Autocomplete
             {
                 Name = r.name,
                 Link = r.l,
-                Date = DateTime.ParseExact(r.date, "d", CultureInfo.InvariantCulture),
+                Date = DateTime.ParseExact(r.date, "M/d/yyyy", CultureInfo.InvariantCulture),
                 StormNumber = Int32.Parse(r.strmnum, CultureInfo.InvariantCulture),
                 Basin = basin,
                 Damage = Int32.Parse(r.damage, CultureInfo.InvariantCulture),
