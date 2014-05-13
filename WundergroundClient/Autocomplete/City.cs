@@ -2,7 +2,7 @@
 
 namespace WundergroundClient.Autocomplete
 {
-    class City : Result
+    public class City : Result
     {
         /// <summary>
         /// Corresponds to the "zmw" field.

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System; using System.Collections.Generic;
 using System.Globalization;
 using System.Net.Http;
 using System.Runtime.Serialization.Json;
@@ -7,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace WundergroundClient.Autocomplete
 {
-    enum ResultFilter
+    public enum ResultFilter
     {
         CitiesOnly,
         HurricanesOnly,
         CitiesAndHurricanes
     }
 
-    class SearchRequest
+    public class SearchRequest
     {
         private const String BaseUrl = "http://autocomplete.wunderground.com/";
 

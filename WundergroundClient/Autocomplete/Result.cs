@@ -2,7 +2,7 @@
 
 namespace WundergroundClient.Autocomplete
 {
-    abstract class Result
+    public abstract class Result
     {
         public String Name;
 

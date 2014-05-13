@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WundergroundClient.Autocomplete
 {
-    class SearchResponse
+    public class SearchResponse
     {
         public Boolean IsSuccessful { get; private set; }
         public IList<Result> Results;

@@ -12,7 +12,7 @@ namespace WundergroundClient.Autocomplete
     /// 
     /// Corresponds to the "basin" field.
     /// </summary>
-    enum TropicalCycloneBasin
+    public enum TropicalCycloneBasin
     {
         NorthAtlantic, // "at"
         EasternPacific, // "ep"
@@ -21,7 +21,7 @@ namespace WundergroundClient.Autocomplete
         SouthIndian, // "si"
         Unknown
     }
-    class Hurricane : Result
+    public class Hurricane : Result
     {
         /// <summary>
         /// The date on which this hurricane occurred. The time properties of this 
