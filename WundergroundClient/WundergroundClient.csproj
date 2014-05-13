@@ -68,6 +68,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Autocomplete\RawAutocompleteResult.cs" />
     <Compile Include="Autocomplete\SearchRequest.cs" />
     <Compile Include="Autocomplete\SearchResponse.cs" />
     <Compile Include="Autocomplete\Result.cs" />

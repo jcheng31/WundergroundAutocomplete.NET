@@ -6,6 +6,7 @@ using System.Text;
 
 namespace WundergroundClient.Autocomplete
 {
+// ReSharper disable InconsistentNaming
     [DataContract]
     internal class RawAutocompleteResult
     {
