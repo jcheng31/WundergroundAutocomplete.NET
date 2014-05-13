@@ -18,7 +18,8 @@ namespace WundergroundClient.Autocomplete
         EasternPacific, // "ep"
         WesternPacific, // "wp"
         NorthIndian, // "ni"
-        SouthIndian // "si"
+        SouthIndian, // "si"
+        Unknown
     }
     class Hurricane : Result
     {
