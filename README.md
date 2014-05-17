@@ -1,4 +1,4 @@
 WundergroundAutocomplete.NET
 ============================
 
-Weather Underground Autocomplete API for .NET. Supports .NET 4.5, Silverlight 4, and WP7.5+
+A portable class library for the Weather Underground Autocomplete API. Supports .NET 4.5, Silverlight 4, and WP7.5+
