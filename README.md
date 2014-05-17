@@ -10,7 +10,7 @@ Wunderground APIs.
 
 # Getting Started
 
-Install the package through [NuGet](https://www.nuget.org):
+Install the package through [NuGet](https://www.nuget.org/packages/WundergroundAutocomplete/):
 `Install-Package WundergroundAutocomplete`
 
 ## Creating and Executing Requests
