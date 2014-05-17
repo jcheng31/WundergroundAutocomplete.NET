@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WundergroundClient.Autocomplete
+namespace WundergroundAutocomplete
 {
     public class City : Result
     {

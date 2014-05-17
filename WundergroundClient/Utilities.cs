@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace WundergroundClient
+namespace WundergroundAutocomplete
 {
     class Utilities
     {

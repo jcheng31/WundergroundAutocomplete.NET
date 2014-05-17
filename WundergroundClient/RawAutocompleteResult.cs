@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace WundergroundClient.Autocomplete
+namespace WundergroundAutocomplete
 {
 // ReSharper disable InconsistentNaming
     [DataContract]

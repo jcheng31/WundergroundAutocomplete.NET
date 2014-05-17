@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WundergroundClient.Autocomplete
+namespace WundergroundAutocomplete
 {
     /// <summary>
     /// Tropical Cyclone Basins used by Wunderground.
