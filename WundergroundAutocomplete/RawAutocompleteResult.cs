@@ -5,38 +5,38 @@ namespace WundergroundAutocomplete
 {
 // ReSharper disable InconsistentNaming
     [DataContract]
-    internal class RawAutocompleteResult
+    public class RawAutocompleteResult
     {
-        [DataMember] internal RawResult[] RESULTS;
+        [DataMember] public RawResult[] RESULTS;
     }
 
     [DataContract]
-    internal class RawResult
+    public class RawResult
     {
-        [DataMember] internal String name;
-        [DataMember] internal String type;
-        [DataMember] internal String l;
+        [DataMember] public String name;
+        [DataMember] public String type;
+        [DataMember] public String l;
 
         // Hurricane Fields
-        [DataMember] internal String date;
-        [DataMember] internal String strmnum;
-        [DataMember] internal String basin;
-        [DataMember] internal String damage;
-        [DataMember] internal String start_epoch;
-        [DataMember] internal String end_epoch;
-        [DataMember] internal String sw_lat;
-        [DataMember] internal String sw_lon;
-        [DataMember] internal String ne_lat;
-        [DataMember] internal String ne_lon;
-        [DataMember] internal String maxcat;
+        [DataMember] public String date;
+        [DataMember] public String strmnum;
+        [DataMember] public String basin;
+        [DataMember] public String damage;
+        [DataMember] public String start_epoch;
+        [DataMember] public String end_epoch;
+        [DataMember] public String sw_lat;
+        [DataMember] public String sw_lon;
+        [DataMember] public String ne_lat;
+        [DataMember] public String ne_lon;
+        [DataMember] public String maxcat;
 
         // City Fields
-        [DataMember] internal String c;
-        [DataMember] internal String zmw;
-        [DataMember] internal String tz;
-        [DataMember] internal String tzs;
-        [DataMember] internal String ll;
-        [DataMember] internal String lat;
-        [DataMember] internal String lon;
+        [DataMember] public String c;
+        [DataMember] public String zmw;
+        [DataMember] public String tz;
+        [DataMember] public String tzs;
+        [DataMember] public String ll;
+        [DataMember] public String lat;
+        [DataMember] public String lon;
     }
 }
